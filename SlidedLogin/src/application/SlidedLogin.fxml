@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Pane fx:id="pane1" layoutX="10.0" layoutY="10.0" prefHeight="515.0" prefWidth="915.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="pane2" layoutX="10.0" layoutY="10.0" prefHeight="410.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="pane3" layoutX="10.0" layoutY="10.0" prefHeight="515.0" prefWidth="915.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="pane4" layoutX="10.0" layoutY="10.0" prefHeight="515.0" prefWidth="915.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="515.0" prefWidth="915.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="22.0" layoutY="22.0" prefHeight="472.0" prefWidth="331.0" spacing="12.0" style="-fx-background-color: white; -fx-background-radius: 40;">
+               <children>
+                  <ImageView fitHeight="179.0" fitWidth="241.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@MountainLogo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="37.0" prefWidth="94.0" text="Sign in" textAlignment="JUSTIFY" textFill="#dbbea2">
+                     <font>
+                        <Font name="Arial Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="247.0" text="&quot;Ain´t no mountain high enough...&quot;" textAlignment="CENTER" textFill="#b2b2b2" wrapText="true">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField focusColor="#edd9ab" labelFloat="true" promptText="Username">
+                     <unFocusColor>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#e8bf6d" />
+                              <Stop color="#e8bf6d" offset="0.007662835249042145" />
+                              <Stop color="#edd9ab" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </unFocusColor></JFXTextField>
+                  <JFXPasswordField focusColor="#edd9ab" labelFloat="true" promptText="Password">
+                     <unFocusColor>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#e8bf6d" />
+                              <Stop color="#e8bf6d" offset="0.007662835249042145" />
+                              <Stop color="#edd9ab" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </unFocusColor></JFXPasswordField>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="26.0" prefWidth="900.0" ripplerFill="WHITE" style="-fx-background-color: #DBBEA2; -fx-background-radius: 5px;" text="Get started" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <HBox prefHeight="20.0" prefWidth="258.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="164.0" text="Password forgotten" textAlignment="CENTER" textFill="#ccaf75" wrapText="true">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="23.0" prefWidth="135.0" text="Create a new account " textAlignment="CENTER" textFill="#ccaf75" wrapText="true">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="2.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
